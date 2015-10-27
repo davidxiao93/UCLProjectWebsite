@@ -1,0 +1,236 @@
+body {
+  padding-bottom: 30px;
+  font-size:17px;
+}
+.bl-logo{
+	border-radius: 5px;
+}
+h1{
+	color: black;
+	font-weight: bold;
+}
+h2{
+	color:#grey;
+}
+p{
+	text-align: justify;
+}
+nav{
+	width: 100%;
+}
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.nav{
+	float: right;
+}
+.container{
+	width: 95%;
+}
+
+.theme-showcase {
+	margin-top:50px;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.inner{
+	max-width:75%;
+	float:right;
+	margin-top: 0px;
+}
+
+.navbar-inverse {
+	background-image: -webkit-linear-gradient(top,#444444 0,#666666 100%);
+	background-image: -o-linear-gradient(top,#444444 0,#666666 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#444444),to(#666666));
+	background-image: linear-gradient(to bottom,#444444 0,#666666 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	background-repeat: repeat-x;
+	background-color: #FFF; 
+	border:none;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.active>a {
+	background-image: -webkit-linear-gradient(top,#999999 0, #666666 100%);
+	background-image: -o-linear-gradient(top,#999999 0, #666666 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#999999),to#666666));
+	background-image: linear-gradient(to bottom,#999999 0,#666666 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff080808', endColorstr='#ff0f0f0f', GradientType=0);
+	background-repeat: repeat-x;
+	-webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.25);
+	box-shadow: inset 0 3px 9px rgba(0,0,0,.25);
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: #eeeeee;
+}
+.icon-top-margin{
+	margin-right:5px
+}
+
+
+#pic-long{
+	width: 450px;
+	height: 500px;
+	display: block;
+	margin:50px auto 50px auto;
+}
+
+#pic-wide{
+	width: 650px;
+	height: 450px;
+	display: block;
+	margin:50px auto 50px auto;
+}
+
+.page-header{
+	border-bottom:1px solid #000;
+}
+
+.jumbotron {
+	border: solid #ccc 1px;
+	margin-top: 40px;
+}
+
+.group {
+    background: yellow;
+    width: 250px;
+    height: 500px;
+}
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 200px;
+}
+.fixed {
+    position: fixed;
+}
+
+/* sidebar */
+
+.bs-docs-sidebar {
+   margin-top:60px;float:left;position:fixed
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #000;
+    border-left: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+    color: #a90329;                 
+.bs-docs-sidebar .nav>li>a:focus {
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #a90329; 
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;           
+}
+
+.navbar-nav{
+	font-size: 16px;
+}
+
+.separator {
+	padding-bottom: 50px;
+}
+
+.content-container{
+	width:75%;
+	float:right;
+	padding: 20px;
+	padding-left:40px;
+	border-left: solid 1px #ccc;
+}
+#home-content{
+	width:70%;
+	margin:100px auto;
+	margin-top: 100px;
+}
+
+@media (max-width:1200px) and (min-width:800px) { 
+	.bs-docs-sidebar {
+	   margin-top:120px;float:left;position:fixed
+	}
+	.page-header{
+		margin-top:105px;border-bottom:1px solid #000;
+	}
+
+}
+
+@media (max-width:800px) { 
+	#sidebar{
+		display: none;
+	}
+	#home-content{
+		width: 90%;
+		margin:40px auto;
+	}
+
+	iframe{
+		width: 100%;
+	} 
+	img{
+		width: 80%;
+	}
+	.nav{
+		float:left;
+	}
+	.content-container{
+		width:98%;
+		padding: 0px;
+		border:none;
+
+	}
+
+	.navbar-brand{
+		width: 200px;
+	}
+	
+
+}
+
